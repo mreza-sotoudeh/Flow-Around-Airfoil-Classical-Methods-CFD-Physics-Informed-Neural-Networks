@@ -227,7 +227,13 @@ The network reproduces the pressure and velocity fields without any mesh; traini
   <img src="images/pinn_potential_flow_naca0024/pressure_field.jpg" width="48%" alt="PINN pressure field">
   <img src="images/pinn_potential_flow_naca0024/velocity_magnitude.jpg" width="48%" alt="PINN velocity magnitude">
 </p>
+## Code
 
+| File | Description |
+|---|---|
+| [`matlab-code-for-panel-method.m`](code/matlab-code-for-panel-method.m) | Source panel method (MATLAB) for symmetric NACA 00xx airfoils: panel independence study, thickness effect, ψ/φ contours and Cp distribution |
+| [`pinn-for-naca0024.py`](code/pinn-for-naca0024.py) | Potential-flow PINN for NACA 0024 (Python/PyTorch) |
+| [`pinn-for-naca6409.py`](code/pinn-for-naca6409.py) | Navier–Stokes PINN for NACA 6409 (Python/PyTorch) |
 ## Key Findings
 
 - **Panel method** gives a fast, low-cost approximation of pressure distribution and streamlines. Its results converge with increasing panel count, and it correctly captures the symmetry at α = 0° and the effect of thickness on the pressure distribution — but it cannot represent viscous effects (boundary layer, separation, realistic drag).

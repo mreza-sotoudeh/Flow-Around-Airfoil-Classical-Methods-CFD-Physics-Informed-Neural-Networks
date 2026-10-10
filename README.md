@@ -227,6 +227,7 @@ The network reproduces the pressure and velocity fields without any mesh; traini
   <img src="images/pinn_potential_flow_naca0024/pressure_field.jpg" width="48%" alt="PINN pressure field">
   <img src="images/pinn_potential_flow_naca0024/velocity_magnitude.jpg" width="48%" alt="PINN velocity magnitude">
 </p>
+
 ## Code
 
 | File | Description |

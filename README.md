@@ -23,10 +23,7 @@
    - [PINN — potential flow, NACA 0024](#7-pinn--potential-flow-naca-0024)
 5. [Key Findings](#key-findings)
 6. [Limitations & Notes](#limitations--notes)
-7. [Repository Structure](#repository-structure)
-8. [Getting Started](#getting-started)
 9. [Full Report](#full-report)
-10. [License](#license)
 
 ---
 

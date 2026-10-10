@@ -244,5 +244,5 @@ The network reproduces the pressure and velocity fields without any mesh; traini
 
 ## Full Report
 
-The complete write-up (in Persian), including governing equations, mesh studies, y⁺ analysis, contours, streamlines, Cp plots, Cl/Cd curves, comparison with experimental data, and all source code in the appendix, is available in [`report/`](report/).
+The complete write-up (in Persian and in English), including governing equations, mesh studies, y⁺ analysis, contours, streamlines, Cp plots, Cl/Cd curves, comparison with experimental data, and all source code in the appendix, is available in [`report/`](report/).
 

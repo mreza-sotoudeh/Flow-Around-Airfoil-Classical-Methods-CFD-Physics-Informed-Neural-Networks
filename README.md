@@ -244,54 +244,8 @@ The network reproduces the pressure and velocity fields without any mesh; traini
 - The panel method is inviscid, so any non-zero drag it reports reflects numerical effects rather than physical drag (d'Alembert's paradox).
 - The potential-flow PINN and the panel method address the same physical model; the Navier–Stokes PINN and Fluent address a viscous model.
 
-## Repository Structure
-
-*(suggested layout — adjust to your actual files)*
-
-```
-.
-├── README.md
-├── images/
-│   ├── cfd_naca6409_re2e6/
-│   ├── cfd_mesh_independence_re3e6/
-│   ├── cfd_naca6409_aoa_sweep_re3e6/
-│   ├── cfd_naca0024_inviscid_aoa5/
-│   ├── pinn_navier_stokes_naca6409/
-│   ├── pinn_potential_flow_naca0024/
-│   └── panel_method/
-├── report/
-│   └── The_Full_Project.pdf        # full report (Persian)
-├── panel_method/
-│   └── panel_method_naca00xx.m     # MATLAB source panel method
-├── pinn/
-│   ├── pinn_navier_stokes_naca6409.py
-│   └── pinn_potential_flow_naca0024.py
-├── cfd_fluent/                     # case setup notes / settings
-└── LICENSE
-```
-
-## Getting Started
-
-### Panel method (MATLAB)
-```matlab
-% Open the script in MATLAB and run it
-panel_method_naca00xx
-```
-
-### PINNs (Python)
-```bash
-pip install numpy matplotlib torch
-python pinn/pinn_navier_stokes_naca6409.py
-```
-A CUDA GPU is used automatically if available (otherwise CPU). For a quick test, reduce the number of collocation points (`N_col`, `N_refine`) in the script.
-
-### CFD (ANSYS Fluent)
-Mesh type, solver settings, boundary conditions and turbulence model are documented in the [report](#full-report); recreate the cases in ANSYS Fluent following those settings.
 
 ## Full Report
 
 The complete write-up (in Persian), including governing equations, mesh studies, y⁺ analysis, contours, streamlines, Cp plots, Cl/Cd curves, comparison with experimental data, and all source code in the appendix, is available in [`report/`](report/).
 
-## License
-
-Specify a license for the repository (e.g., MIT) — see `LICENSE`.
